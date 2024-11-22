@@ -21,6 +21,6 @@ Anime.js is a lightweight JavaScript animation library with a simple, yet powerf
 To get started with Anime.js, clone this repository and install the dependencies:
 
 ```sh
-git clone https://github.com/yourusername/animejs.git
+git clone https://github.com/AdrianRydin/animejs
 cd animejs
 npm install
