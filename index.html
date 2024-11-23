@@ -5,18 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="quicksand-font">
+    <header>
+        <h1>Anime.js testing</h1>
+    </header>
     
-    <div class="test-div"></div>
+    <main>
+        <section class="stagger-container">
+            <div class="stagger-row">
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+            </div>
+            <div class="stagger-row">
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+
+            </div>
+            <div class="stagger-row">
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+
+            </div>
+            <div class="stagger-row">
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+
+            </div>
+            <div class="stagger-row">
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+                <div class="stagger-item"></div>
+
+            </div>
+                
+            
+        </section>
+    </main>
+    
     
     <script src="/node_modules/animejs/lib/anime.min.js"></script>
     <script>
         anime({
-            targets: '.test-div',
-            translateX: 250,
-            rotate: '1turn',
-            duration: 2000,
+        targets: '.stagger-item',
+        scale: [
+            {value: .1, easing: 'easeOutSine', duration: 500},
+            {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        ],
+        delay: anime.stagger(20,)
         });
         </script>
 
